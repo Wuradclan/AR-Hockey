@@ -1,8 +1,8 @@
 // routes/scores.js
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const Score = require('./Score.js');
-const User = require('./User.js');
+const Score = require('../models/Score.js');
+const User = require('../models/User.js');
 const router = express.Router();
 
 // Middleware to authenticate user
