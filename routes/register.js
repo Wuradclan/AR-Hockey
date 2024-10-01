@@ -2,7 +2,7 @@
   // Import necessary modules
   const express = require('express');
   const dotenv = require('dotenv');
-  const User = require('./models/User');
+  const User = require('../models/User.js');
   const admin = require('firebase-admin');
   const router = express.Router();
 
