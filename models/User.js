@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 //   password: { type: String, required: true },
 //   createdAt: { type: Date, default: Date.now },
 // });
-const UserSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
   firebaseUid: { type: String, required: true, unique: true }, // Firebase user ID
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
@@ -15,4 +15,4 @@ const UserSchema = new mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', userSchema);

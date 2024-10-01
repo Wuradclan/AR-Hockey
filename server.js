@@ -41,7 +41,7 @@ const verifyToken = async (req, res, next) => {
 };
 
 // Routes
-app.use('/api/auth', require('./routes/auth.js'));
+//app.use('/api/auth', require('./routes/auth.js'));
 app.use('/api/scores', require('./routes/scores.js'));
 
 // Route to register a new user (after Firebase Authentication)
